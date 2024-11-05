@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plan estrategico</title>
+    <link rel="stylesheet" href="./style.css">
+    <Body Bgcolor="b5f3fc">
+        <center> <img src="./logo2.png" width="300" height="300"> </center>
+
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="">Quienes somos</a>
+                <ul>
+                    <li><a href="./plan.html">Plan Estrategico</a>
+
+                    <li><a href="">Proyecto</a>
+                        <ul>
+                            <li><a href="./formulario.html">formulacion</a></li>
+                            <li><a href="./MARCO LEGAL.pdf">Marco Legal</a></li>
+                            <li><a href="./Marco teorico.pdf">Marco Teorico</a></li>
+                            <li><a href="./cronograma.pdf">Cronograma</a>
+                                <ul>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Evidencia</a>
+                <ul>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Encuesta</a></li>
+                    <li><a href="./INFOGRAFIA.pdf">Infografia</a></li>
+                    <li><a href="">potcast </a></li>
+                </ul>
+            </li>
+            <li><a href="">S. tecnologica</a>
+                <ul>
+                    <li><a href="">Fotos</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')">Vision</button>
+        <button class="menu-button" onclick="showImage('image2')">V. Corporativos</button>
+        <button class="menu-button" onclick="showImage('image3')">Mision</button>
+    </div>
+<br>
+<br>
+<br>
+    <div class="image-container">
+       <center> <img id="image1" class="image" src="./vision.jpg"  width="800" height="600"></center>
+        <center><img id="image2" class="image" src="./VALORES.jpg"  width="800" height="600"></center>
+      <center> <img id="image3" class="image" src="./mision.jpg"  width="800" height="600"></center>
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css">
+    <Body Bgcolor="b5f3fc">
+        <center> <img src="./mascota.png" width="300" height="300"> </center>
+
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="">Quienes somos</a>
+                <ul>
+                    <li><a href="./plan.html">Plan Estrategico</a>
+
+                    <li><a href="">Proyecto</a>
+                        <ul>
+                            <li><a href="./formulario.html">formulacion</a></li>
+                            <li><a href="./Marco legal.pdf">Marco Legal</a></li>
+                            <li><a href="./Marco teórico.pdf">Marco Teorico</a></li>
+                            <li><a href="./Cronograma.pdf">Cronograma</a>
+                                <ul>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Evidencia</a>
+                <ul>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Encuesta</a></li>
+                    <li><a href="./INFOGRAFIA.pdf">Infografia</a></li>
+                    <li><a href="">potcast </a></li>
+                </ul>
+            </li>
+            <li><a href="">S. tecnologica</a>
+                <ul>
+                    <li><a href="">Fotos</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')">Objetivos E.</button>
+        <button class="menu-button" onclick="showImage('image2')">Objetivo G.</button>
+        <button class="menu-button" onclick="showImage('image3')">P. problema</button>
+    </div>
+<br>
+<br>
+<br>
+    <div class="image-container">
+       <center> <img id="image1" class="image" src="./ESPECIFICOS.jpg"  width="800" height="600"></center>
+        <center><img id="image2" class="image" src="./general.jpg"  width="800" height="600"></center>
+      <center> <img id="image3" class="image" src="./pregunta.jpg"  width="800" height="600"></center>
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script> 
+</body>
+</html>
